@@ -1,0 +1,204 @@
+
+body {
+    background-color: hsl(180, 29%, 50%);
+    background-image: url("images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    
+    font-family: 'League Spartan';;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#job-list-container {
+    display: flex;
+    background-color: hsl(180, 31%, 95%);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content:space-around; 
+
+    row-gap: 30px;
+    padding-top: 50px;
+    margin-top: 185px;
+}
+
+.job-entity {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 100px;
+    border-radius: 15px;
+    padding: 20px 40px;
+    background-image: linear-gradient(to right, hsl(180, 29%, 50%) 0px, hsl(180, 29%, 50%) 0.5vw, hsl(180, 52%, 96%) 0.5vw);
+
+    justify-content:space-between;
+    box-shadow: 0 5px 10px hsl(180, 8%, 52%);
+    gap: 20px;
+
+}
+
+/* The height of the logo image 'decides' the height of `job-entity` container */
+.job-entity > img {
+    width: auto;
+    height: 90px;
+    align-self: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 91.5%;
+}
+
+.job-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+}
+
+.job-description > .position {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.job-description > .company-description {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.job-description > .company-description > .company-name{
+    color: hsl(180, 29%, 50%);
+}
+
+.job-description > .company-description > .new-featured{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: hsl(180, 29%, 50%);
+    font-weight: bolder;
+    gap: 15px;
+}
+
+.job-description > .company-description > .new-featured > .new-indicator{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+
+    display: inline-block;
+    height: 10px;
+    padding: 5px;
+    border-radius: 10px;
+
+    line-height: 10px;
+    font-weight: 700;
+    font-size: 0.75em;
+}
+
+.job-description > .company-description > .new-featured > .featured-indicator{
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    
+    display: inline-block;
+    height: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 10px;
+    font-size: 0.75em;
+}
+
+.other-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:left;
+}
+
+.other-info > span {
+    display: inline-block;
+}
+
+.other-info > span:not(:last-child)::after {
+    content: "·";
+    margin: 0 10px;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    column-gap: 10px;
+}
+
+.category-container > span {
+    display: inline-block;
+    color:hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 90%);
+    height: 20px;
+    width: auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.85em;
+    font-weight: 700;
+    padding: 0 5px;
+    /* margin: 0 0.2vw; */
+}
+
+.category-container > span:hover {
+    color: white;
+    background-color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+.position:hover {
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 375px){
+
+    .job-entity {
+        flex-direction: column;
+        height: auto;
+        /* margin-top: 50px;
+        margin-bottom: 50px; */
+    }
+
+    .job-entity > img {
+        width: auto;
+        height: 30px;
+        row-gap: 20px;
+        /* position: relative;
+        transform: translateY(-40px); */
+    }
+    .content-container {
+        flex-direction: column;
+        height: auto;
+        row-gap: 20px;
+    }
+
+    .category-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:start;
+        justify-items:start;
+        row-gap: 10px;
+    }
+}
