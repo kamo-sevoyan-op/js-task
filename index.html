@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Job Listings</title>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=League Spartan'>
+  <link rel="stylesheet" href="style.css">
 
+  <title>Frontend Mentor | Job Listings</title>
 </head>
+
 <body>
+  <!-- <div id="filter">
+  </div> -->
+
+  <div id="job-list-container">
+  </div>
+
+  <script src="./load_data.js"></script>
   
+  <script>
+    window.addEventListener("load", insertData);
+  </script>
 </body>
+
 </html>
