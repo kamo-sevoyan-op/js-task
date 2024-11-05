@@ -236,8 +236,10 @@ body {
 
     .category-container > span {
         font-weight: 700;
-        padding: 5px;
+        padding: 2px;
         font-size: 1.15rem;
+        height: 20px;
+        line-height: 20px;
     }
 
     .job-entity > .content-container > .category-container::before {
