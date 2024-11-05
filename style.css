@@ -33,7 +33,7 @@ body {
     height: 100px;
     border-radius: 15px;
     padding: 20px 40px;
-    background-image: linear-gradient(to right, hsl(180, 29%, 50%) 0px, hsl(180, 29%, 50%) 0.5vw, hsl(180, 52%, 96%) 0.5vw);
+    background-color: hsl(180, 52%, 96%);
 
     justify-content:space-between;
     box-shadow: 0 5px 10px hsl(180, 8%, 52%);
