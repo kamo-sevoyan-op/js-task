@@ -176,7 +176,7 @@ body {
 }
 
 #filter-container {
-    display: none;
+    display: flex;
     flex-direction: row;
     width: 75%;
     height: 30px;
@@ -297,6 +297,10 @@ body {
         font-weight: 700;
     }
 
+    #job-list-container {
+        padding-top: 90px;
+    }
+
     .job-entity {
         margin-top: 10px;
         position: relative;
@@ -385,10 +389,10 @@ body {
 
     #filter-container {
         width: 80%;
-        height: 90px;
+        height: 100px;
         justify-content: space-between;
         align-items: center;
-        top: -100px;
+        top: -70px;
         padding: 10px 20px;
     }
 
