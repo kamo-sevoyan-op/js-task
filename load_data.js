@@ -303,10 +303,30 @@ function updateFilter(event){
   filterJobList();
 }
 
+function clearAllFilters(event) {
+
+  const filterContainer = document.getElementById("filter-container");
+  filterContainer.setAttribute("data-role", "");
+  filterContainer.setAttribute("data-level", "");
+  filterContainer.setAttribute("data-languages", "");
+  filterContainer.setAttribute("data-tools", "");
+
+  const filterElementContainer = document.getElementById("filter-element-container");
+
+  while (filterElementContainer.firstChild) {
+    filterElementContainer.removeChild(filterElementContainer.firstChild);
+  }
+
+  filterContainer.style.display = "none";
+  filterJobList();
+}
+
 async function insertData(){
 
   const data = await loadData();
   const flexContainer = document.getElementById("job-list-container");
+  const clearElement = document.getElementById("filter-clear");
+  clearElement.addEventListener("click", clearAllFilters)
 
   for (let entity of data){
     const element = createElement(entity);
