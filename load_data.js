@@ -105,6 +105,7 @@ function createCategoryContainer(entity){
 
   const levelElement = document.createElement("span");
   levelElement.innerText = level;
+  container.append(levelElement);
 
   for (let language of languages){
     const langElement = document.createElement("span");
