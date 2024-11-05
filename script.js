@@ -210,7 +210,7 @@ function createFilterElement(categoryType, categoryValue){
   iconContainer.setAttribute("class", "filter-element-remove");
   iconContainer.addEventListener("click", removeFilter);
   const icon = document.createElement("img");
-  icon.setAttribute("src", "./images/icon-remove.svg");
+  icon.setAttribute("src", "./assets/icons/icon-remove.svg");
   iconContainer.append(icon);
 
   element.append(textContainer);
