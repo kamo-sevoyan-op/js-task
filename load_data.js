@@ -151,15 +151,8 @@ async function insertData(){
   const data = await loadData();
   const flexContainer = document.getElementById("job-list-container");
 
-  let i = 0;
   for (let entity of data){
-
-    // if (i > 2){
-    //   break;
-    // }
     const element = createElement(entity);
     flexContainer.append(element);
-
-    i++;
   }
 }
