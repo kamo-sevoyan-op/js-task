@@ -64,7 +64,7 @@ body {
     max-width: 250px;
 }
 
-.job-description > .company-description {
+.company-description {
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
@@ -73,11 +73,11 @@ body {
     gap: 15px;
 }
 
-.job-description > .company-description > .company-name{
+.company-name{
     color: hsl(180, 29%, 50%);
 }
 
-.job-description > .company-description > .new-featured{
+.new-featured{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,7 +86,7 @@ body {
     gap: 15px;
 }
 
-.job-description > .company-description > .new-featured > .new-indicator{
+.new-indicator{
     background-color: hsl(180, 29%, 50%);
     color: white;
 
@@ -100,7 +100,7 @@ body {
     font-size: 0.75em;
 }
 
-.job-description > .company-description > .new-featured > .featured-indicator{
+.featured-indicator{
     background-color: hsl(180, 14%, 20%);
     color: white;
     
@@ -242,6 +242,14 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    .category-container {
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+}
+
 @media screen and (max-width: 375px){
 
     body {
@@ -311,7 +319,7 @@ body {
         line-height: 20px;
     }
 
-    .job-entity > .content-container > .category-container::before {
+    .category-container::before {
         content: "";
         display: block;
         width: 100%;
