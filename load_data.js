@@ -142,6 +142,7 @@ function createElement(entity){
   contentContainer.append(categoryContainer);
 
   container.append(contentContainer);
+  container.setAttribute("data-is-new", entity.new);
 
   return container;
 }
