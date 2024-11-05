@@ -5,7 +5,8 @@ body {
     font-weight: 500;
     margin: 0;
 }
-.bg-header-desktop {
+
+#bg-header-desktop img {
     display: block;
     width: 100%;
     height: auto;
