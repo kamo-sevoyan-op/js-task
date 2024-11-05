@@ -1,14 +1,15 @@
-
 body {
     background-color: hsl(180, 29%, 50%);
-    background-image: url("images/bg-header-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    
     font-family: 'League Spartan';;
     font-size: 15px;
     font-weight: 500;
+    margin: 0;
+}
+.bg-header-desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
 }
 
 #job-list-container {
@@ -21,7 +22,8 @@ body {
 
     row-gap: 30px;
     padding-top: 50px;
-    margin-top: 185px;
+    width: 100%;
+    padding-top: 60px;
 }
 
 .job-entity {
