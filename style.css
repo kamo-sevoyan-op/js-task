@@ -243,9 +243,48 @@ body {
 }
 
 @media screen and (max-width: 768px){
+
+    body {
+        font-size: 11px;
+    }
+    #job-list-container {
+        padding-top: 70px;
+    }
+
+    .job-entity {
+        height: 130px;
+    }
+
     .category-container {
         flex-wrap: wrap;
         justify-content: end;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .company-description {
+        gap: 5px;
+    }
+
+    .new-featured {
+        gap: 5px;
+    }
+
+    .other-info > span:not(:last-child)::after {
+        content: "·";
+        margin: 0 5px;
+    }
+
+    #filter-container {
+        height: 50px;
+        align-items: center;
+    }
+
+    #filter-element-container {
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 5px;
     }
 
 }
