@@ -178,6 +178,7 @@ body {
 
     body {
         font-size: 17px;
+        font-weight: 700;
     }
 
     .job-entity {
@@ -279,7 +280,6 @@ body {
 
     justify-content:space-between;
     box-shadow: 0 5px 10px hsl(180, 8%, 52%);
-    /* gap: 20px; */
 
     position: absolute;
     top: -45px;
@@ -323,5 +323,17 @@ body {
 
 .filter-element-remove:hover {
     background-color: hsl(180, 14%, 20%);
+    cursor: pointer;
+}
+
+#filter-clear {
+    color:hsl(180, 29%, 50%);
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+#filter-clear:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
