@@ -103,6 +103,7 @@ function updateLayout() {
       joblistContainer.append(element);
     }
   }
+
   if (Object.values(STATE.filters).some((category) => category.size > 0)) {
     createFilterContainer();
   }
@@ -112,8 +113,8 @@ function createFilterContainer() {
 
   const filterContainer = document.createElement("div");
   filterContainer.setAttribute("id", "filter-container");
-  const joblistContainer = document.getElementById("job-list-container");
-  joblistContainer.append(filterContainer);
+  const filterableDataContainer = document.getElementById("filterable-data-container");
+  filterableDataContainer.prepend(filterContainer);
 
 
   const filterElementContainer = document.createElement("div");

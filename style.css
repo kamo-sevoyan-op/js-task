@@ -11,33 +11,37 @@ body {
     margin: 0;
 }
 
-#bg-header-desktop img {
-    display: block;
+#filterable-data-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 156px;
     width: 100%;
-    height: auto;
-    padding: 0;
+
+    background-color: hsl(180, 31%, 95%);
 }
 
 #job-list-container {
-    position: relative;
+    box-sizing: border-box;
     display: flex;
-    background-color: hsl(180, 31%, 95%);
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
 
     row-gap: 30px;
-    padding-top: 50px;
     padding-bottom: 80px;
     width: 100%;
+    margin-top: 90px;
 }
 
 .job-entity {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    width: 75%;
-    height: 100px;
+    width: 80%;
+    height: 150px;
     border-radius: 15px;
     padding: 20px 40px;
     background-color: hsl(180, 52%, 96%);
@@ -183,10 +187,12 @@ body {
 }
 
 #filter-container {
+    box-sizing: border-box;
     display: flex;
+    align-items: center;
     flex-direction: row;
-    width: 75%;
-    height: 30px;
+    width: 80%;
+    height: auto;
     border-radius: 15px;
     padding: 20px 40px;
     background-color: hsl(180, 52%, 96%);
@@ -201,8 +207,13 @@ body {
 #filter-element-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: start;
+    justify-items: start;
+    align-items: start;
     column-gap: 15px;
+    row-gap: 10px;
+    /* width: 78%; */
 }
 
 .filter-element {
@@ -254,15 +265,20 @@ body {
 @media screen and (max-width: 768px) {
 
     body {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     #job-list-container {
-        padding-top: 70px;
+        margin-top: 30px;
     }
-
+    
     .job-entity {
         height: 130px;
+    }
+
+    .job-entity>img {
+        width: auto;
+        height: 60px;
     }
 
     .category-container {
@@ -286,8 +302,8 @@ body {
     }
 
     #filter-container {
-        height: 50px;
-        align-items: center;
+        position: relative;
+        top: -30px;
     }
 
     #filter-element-container {
@@ -317,8 +333,6 @@ body {
         flex-direction: column;
         align-items: left;
         height: auto;
-        gap: 0;
-        width: 70%;
         height: auto;
         border-radius: 7px;
     }
@@ -399,11 +413,12 @@ body {
 
     #filter-container {
         width: 80%;
-        height: 100px;
         justify-content: space-between;
         align-items: center;
         top: -70px;
         padding: 10px 20px;
+        position: relative;
+        top: -30px;
     }
 
     #filter-element-container {
