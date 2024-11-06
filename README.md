@@ -24,15 +24,16 @@ Users should be able to:
 
 
 ### Screenshots
-<div style="text-align: center;">
+
+<p align="center" style="text-align: center;">
   <img src="./preview/desktop-design.png" alt="Desktop layout" style="display: block; margin-left: auto; margin-right: auto;"/>
   <figcaption>Desktop layout</figcaption>
-</div>
+</p>
 <hr>
-<div style="text-align: center;">
+<p align="center" style="text-align: center;">
   <img src="./preview/mobile-design.png" alt="Mobile layout" width="300" style="display: block; margin-left: auto; margin-right: auto;"/>
   <figcaption>Mobile layout</figcaption>
-</div>
+</p>
 
 ## My process
 
