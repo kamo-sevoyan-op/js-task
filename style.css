@@ -1,5 +1,10 @@
 body {
     background-color: hsl(180, 29%, 50%);
+    background-image: url("./assets/icons/bg-header-desktop.svg");
+    background-size:auto;
+    background-position: right top;
+    background-repeat: repeat-x;
+
     font-family: 'League Spartan';
     font-size: 15px;
     font-weight: 500;
@@ -299,10 +304,11 @@ body {
     body {
         font-size: 17px;
         font-weight: 700;
+        background-image: url("./assets/icons/bg-header-mobile.svg");
     }
 
     #job-list-container {
-        padding-top: 90px;
+        margin-top: 60px;
     }
 
     .job-entity {
