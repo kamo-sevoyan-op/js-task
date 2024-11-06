@@ -1,7 +1,6 @@
 body {
     background-color: hsl(180, 29%, 50%);
     font-family: 'League Spartan';
-    ;
     font-size: 15px;
     font-weight: 500;
     margin: 0;
@@ -407,7 +406,6 @@ body {
 
         width: 200px;
         row-gap: 20px;
-
-        gap: 10px;
+        column-gap: 10px;
     }
 }
