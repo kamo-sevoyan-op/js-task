@@ -1,6 +1,7 @@
 body {
     background-color: hsl(180, 29%, 50%);
-    font-family: 'League Spartan';;
+    font-family: 'League Spartan';
+    ;
     font-size: 15px;
     font-weight: 500;
     margin: 0;
@@ -19,8 +20,8 @@ body {
     background-color: hsl(180, 31%, 95%);
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items:center;
-    justify-content:space-around; 
+    align-items: center;
+    justify-content: space-around;
 
     row-gap: 30px;
     padding-top: 50px;
@@ -37,13 +38,13 @@ body {
     padding: 20px 40px;
     background-color: hsl(180, 52%, 96%);
 
-    justify-content:space-between;
+    justify-content: space-between;
     box-shadow: 0 5px 10px hsl(180, 8%, 52%);
     gap: 20px;
 
 }
 
-.job-entity > img {
+.job-entity>img {
     width: auto;
     height: 90px;
     align-self: center;
@@ -67,17 +68,17 @@ body {
 .company-description {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: nowrap;
     gap: 15px;
 }
 
-.company-name{
+.company-name {
     color: hsl(180, 29%, 50%);
 }
 
-.new-featured{
+.new-featured {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,7 +87,7 @@ body {
     gap: 15px;
 }
 
-.new-indicator{
+.new-indicator {
     background-color: hsl(180, 29%, 50%);
     color: white;
 
@@ -100,10 +101,10 @@ body {
     font-size: 0.75em;
 }
 
-.featured-indicator{
+.featured-indicator {
     background-color: hsl(180, 14%, 20%);
     color: white;
-    
+
     display: inline-block;
     height: 10px;
     padding: 5px;
@@ -112,7 +113,7 @@ body {
     font-size: 0.75em;
 }
 
-.job-description > .position {
+.job-description>.position {
     display: inline-block;
     font-size: 1.25em;
     font-weight: 700;
@@ -123,15 +124,15 @@ body {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    justify-content:left;
+    justify-content: left;
     color: hsl(180, 8%, 52%);
 }
 
-.other-info > span {
+.other-info>span {
     display: inline-block;
 }
 
-.other-info > span:not(:last-child)::after {
+.other-info>span:not(:last-child)::after {
     content: "·";
     margin: 0 10px;
 }
@@ -146,9 +147,9 @@ body {
     column-gap: 10px;
 }
 
-.category-container > span {
+.category-container>span {
     display: inline-block;
-    color:hsl(180, 29%, 50%);
+    color: hsl(180, 29%, 50%);
     background-color: hsl(180, 31%, 90%);
     height: 20px;
     width: auto;
@@ -160,7 +161,7 @@ body {
     padding: 0 5px;
 }
 
-.category-container > span:hover {
+.category-container>span:hover {
     color: white;
     background-color: hsl(180, 29%, 50%);
     cursor: pointer;
@@ -184,7 +185,7 @@ body {
     padding: 20px 40px;
     background-color: hsl(180, 52%, 96%);
 
-    justify-content:space-between;
+    justify-content: space-between;
     box-shadow: 0 5px 10px hsl(180, 8%, 52%);
 
     position: absolute;
@@ -206,10 +207,10 @@ body {
     font-weight: 700;
 }
 
-.filter-element > span {
+.filter-element>span {
     display: block;
     text-align: center;
-    color:hsl(180, 29%, 50%);
+    color: hsl(180, 29%, 50%);
     background-color: hsl(180, 31%, 90%);
     text-align: center;
     line-height: 30px;
@@ -232,7 +233,7 @@ body {
 }
 
 #filter-clear {
-    color:hsl(180, 29%, 50%);
+    color: hsl(180, 29%, 50%);
     text-align: center;
     height: 30px;
     line-height: 30px;
@@ -243,11 +244,12 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     body {
         font-size: 11px;
     }
+
     #job-list-container {
         padding-top: 70px;
     }
@@ -271,7 +273,7 @@ body {
         gap: 5px;
     }
 
-    .other-info > span:not(:last-child)::after {
+    .other-info>span:not(:last-child)::after {
         content: "·";
         margin: 0 5px;
     }
@@ -290,7 +292,7 @@ body {
 
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
 
     body {
         font-size: 17px;
@@ -313,7 +315,7 @@ body {
         border-radius: 7px;
     }
 
-    .job-entity > img {
+    .job-entity>img {
         height: 50px;
         width: auto;
         row-gap: 20px;
@@ -337,7 +339,7 @@ body {
         padding-top: 25px;
     }
 
-    .job-description > .company-description > .new-featured{
+    .job-description>.company-description>.new-featured {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -349,13 +351,13 @@ body {
     .category-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:start;
-        align-items:start;
-        justify-items:start;
+        justify-content: start;
+        align-items: start;
+        justify-items: start;
         row-gap: 20px;
     }
 
-    .category-container > span {
+    .category-container>span {
         font-weight: 700;
         padding: 2px;
         font-size: 1.15rem;
@@ -367,17 +369,17 @@ body {
         content: "";
         display: block;
         width: 100%;
-        height: 1px;  
+        height: 1px;
         background-color: hsl(180, 8%, 52%);
         margin-top: 1px;
     }
 
-    .category-container > span:focus {
+    .category-container>span:focus {
         color: white;
         background-color: hsl(180, 29%, 50%);
         cursor: pointer;
     }
-    
+
     .position:focus {
         color: hsl(180, 29%, 50%);
         cursor: pointer;
@@ -399,7 +401,7 @@ body {
     #filter-element-container {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content:start;
+        justify-content: start;
         align-content: start;
         justify-items: start;
 

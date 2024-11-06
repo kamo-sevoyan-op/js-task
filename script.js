@@ -1,6 +1,6 @@
 const STATE = {}
 
-async function initializeState(){
+async function initializeState() {
 
   STATE.filters = {
     role: new Set([]),
@@ -54,7 +54,7 @@ function removeFilter(event) {
   const target = event.target.closest(".filter-element");
   const categoryType = target.dataset.categoryType;
   const categoryValue = target.dataset.categoryValue;
-  
+
   STATE.filters[categoryType].delete(categoryValue);
 
   updateLayout();
@@ -65,10 +65,10 @@ function clearAllFilters(event) {
   updateLayout();
 }
 
-function matchFilters(entity){
-  for (const category in STATE.filters){
-    for (const type of STATE.filters[category]){
-      if (!entity[category].includes(type)){
+function matchFilters(entity) {
+  for (const category in STATE.filters) {
+    for (const type of STATE.filters[category]) {
+      if (!entity[category].includes(type)) {
         return false;
       }
     }
@@ -77,9 +77,9 @@ function matchFilters(entity){
   return true;
 }
 
-function eraseOldLayout(){
+function eraseOldLayout() {
   const joblistContainer = document.getElementById("job-list-container");
-  
+
   while (joblistContainer.firstChild) {
     joblistContainer.removeChild(joblistContainer.firstChild);
   }
@@ -88,24 +88,24 @@ function eraseOldLayout(){
 
 }
 
-function updateLayout(){
+function updateLayout() {
 
   eraseOldLayout();
 
   const joblistContainer = document.getElementById("job-list-container");
 
-  for (const entity of STATE.data){
-    if (matchFilters(entity)){
+  for (const entity of STATE.data) {
+    if (matchFilters(entity)) {
       const element = createElement(entity);
       joblistContainer.append(element);
     }
   }
-  if (Object.values(STATE.filters).some((category) => category.size > 0)){
+  if (Object.values(STATE.filters).some((category) => category.size > 0)) {
     createFilterContainer();
   }
 }
 
-function createFilterContainer(){
+function createFilterContainer() {
 
   const filterContainer = document.createElement("div");
   filterContainer.setAttribute("id", "filter-container");
@@ -123,10 +123,10 @@ function createFilterContainer(){
 
   filterContainer.append(filterElementContainer);
   filterContainer.append(clearElement);
-  
 
-  for (const categoryType in STATE.filters){
-    for (const categoryValue of STATE.filters[categoryType]){
+
+  for (const categoryType in STATE.filters) {
+    for (const categoryValue of STATE.filters[categoryType]) {
       const filterElement = createFilterElement(categoryType, categoryValue);
       filterElementContainer.append(filterElement);
     }
