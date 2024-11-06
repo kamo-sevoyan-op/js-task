@@ -112,10 +112,11 @@ body {
     font-size: 0.75em;
 }
 
-.job-description>.position {
+.position {
     display: inline-block;
     font-size: 1.25em;
     font-weight: 700;
+    transition: color 0.15s ease;
 }
 
 .other-info {
@@ -158,6 +159,7 @@ body {
     font-size: 0.85em;
     font-weight: 700;
     padding: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .category-container>span:hover {
@@ -224,6 +226,7 @@ body {
     justify-content: center;
     padding: 8px;
     border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
 }
 
 .filter-element-remove:hover {
