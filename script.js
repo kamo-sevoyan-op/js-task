@@ -240,7 +240,7 @@ function createDescriptionContainer(entity) {
   return container;
 }
 
-function createCategoryContainer(entity, root) {
+function createCategoryContainer(entity) {
 
   const container = document.createElement("div");
   container.setAttribute("class", "category-container");
@@ -253,46 +253,28 @@ function createCategoryContainer(entity, root) {
   const roleElement = document.createElement("span");
   roleElement.setAttribute("data-category-type", "role");
   roleElement.setAttribute("data-category-value", role);
-  root.setAttribute("data-role", role);
   roleElement.innerText = role;
-  roleElement.setAttribute("class", "role-element");
   container.append(roleElement);
 
   const levelElement = document.createElement("span");
   levelElement.setAttribute("data-category-type", "level");
   levelElement.setAttribute("data-category-value", level);
-  root.setAttribute("data-level", level);
   levelElement.innerText = level;
   container.append(levelElement);
 
-  root.setAttribute("data-languages", "");
   for (let language of languages) {
     const langElement = document.createElement("span");
     langElement.setAttribute("data-category-type", "languages");
     langElement.setAttribute("data-category-value", language);
 
-    const values = root.getAttribute("data-languages");
-    if (values === "") {
-      root.setAttribute("data-languages", language)
-    } else {
-      root.setAttribute("data-languages", `${values},${language}`);
-    }
     langElement.innerText = language;
     container.append(langElement);
   }
 
-  root.setAttribute("data-tools", "");
   for (let tool of tools) {
     const toolElement = document.createElement("span");
     toolElement.setAttribute("data-category-type", "tools");
     toolElement.setAttribute("data-category-value", tool);
-
-    const values = root.getAttribute("data-tools");
-    if (values === "") {
-      root.setAttribute("data-tools", tool)
-    } else {
-      root.setAttribute("data-tools", `${values},${tool}`);
-    }
 
     toolElement.innerText = tool;
     container.append(toolElement);
@@ -317,7 +299,7 @@ function createElement(entity) {
   const contentContainer = document.createElement("div");
   contentContainer.setAttribute("class", "content-container");
   const descriptionContainer = createDescriptionContainer(entity);
-  const categoryContainer = createCategoryContainer(entity, container);
+  const categoryContainer = createCategoryContainer(entity);
   categoryContainer.addEventListener("click", addFilter);
 
   contentContainer.append(descriptionContainer);
