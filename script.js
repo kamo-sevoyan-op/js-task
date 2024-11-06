@@ -1,4 +1,7 @@
-const STATE = {}
+const STATE = {
+  filters: {},
+  data: []
+}
 
 async function initializeState() {
 
