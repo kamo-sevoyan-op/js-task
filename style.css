@@ -318,7 +318,7 @@ body {
 @media screen and (max-width: 375px) {
 
     body {
-        font-size: 17px;
+        font-size: 12px;
         font-weight: 700;
         background-image: url("./assets/icons/bg-header-mobile.svg");
     }
@@ -376,13 +376,12 @@ body {
         justify-content: start;
         align-items: start;
         justify-items: start;
-        row-gap: 20px;
+        row-gap: 10px;
     }
 
     .category-container>span {
         font-weight: 700;
         padding: 2px;
-        font-size: 1.15rem;
         height: 20px;
         line-height: 20px;
     }
