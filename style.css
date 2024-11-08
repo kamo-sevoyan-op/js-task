@@ -18,7 +18,7 @@ body {
     align-items: center;
     margin-top: 156px;
     width: 100%;
-
+    min-height: 100vh;
     background-color: hsl(180, 31%, 95%);
 }
 
