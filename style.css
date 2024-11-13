@@ -182,8 +182,10 @@ body {
     cursor: pointer;
 }
 
-.job-entity[data-is-new="true"] {
-    background-image: linear-gradient(to right, hsl(180, 29%, 50%) 0px, hsl(180, 29%, 50%) 10px, hsl(180, 52%, 96%) 10px);
+.job-entity:hover {
+    border-left-style: solid;
+    border-left-color: hsl(180, 29%, 50%);
+    border-left-width: 7px;
 }
 
 #filter-container {
@@ -337,6 +339,12 @@ body {
         border-radius: 7px;
     }
 
+    .job-entity:hover {
+        border-left-style: solid;
+        border-left-color: hsl(180, 29%, 50%);
+        border-left-width: 7px;
+    }
+
     .job-entity>img {
         height: 50px;
         width: auto;
@@ -404,10 +412,6 @@ body {
     .position:focus {
         color: hsl(180, 29%, 50%);
         cursor: pointer;
-    }
-
-    .job-entity[data-is-new="true"] {
-        background-image: linear-gradient(to right, hsl(180, 29%, 50%) 0px, hsl(180, 29%, 50%) 5px, hsl(180, 52%, 96%) 5px);
     }
 
     #filter-container {
